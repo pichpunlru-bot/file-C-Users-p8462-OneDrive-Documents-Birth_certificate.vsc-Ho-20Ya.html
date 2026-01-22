@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ho Ya | Search</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff; /* White background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .search-container {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Branding: Ho ya (Red and White) */
+        .brand {
+            font-size: 80px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+        .ho { color: #ff0000; } /* Red */
+        .ya { color: #333333; }   /* Dark contrast for white background */
+
+        /* The Search Bar */
+        .search-box {
+            width: 100%;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: 2px solid #ff0000; /* Red Border */
+            border-radius: 30px;
+            outline: none;
+            box-sizing: border-box;
+            transition: box-shadow 0.3s;
+        }
+
+        .search-box:focus {
+            box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.2);
+        }
+
+        .button-group {
+            margin-top: 25px;
+        }
+
+        .search-btn {
+            padding: 10px 30px;
+            font-size: 16px;
+            background-color: #0ec9e6; /* Red Button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .search-btn:hover {
+            background-color: #cc0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <div class="brand">
+            <span class="ho">Ho</span><span class="ya">Ya</span>
+        </div>
+
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" name="q" class="search-box" placeholder="Search with Ho Ya..." autofocus>
+            
+            <div class="button-group">
+                <button type="submit" class="search-btn">Search Google</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
